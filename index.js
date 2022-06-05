@@ -1,14 +1,7 @@
-// Write your code here!
+// Write your code here!()
+const first = document.querySelector('main')
+first.remove()
 
-  
-// Remove the <main> element with id 'main'
-const mainElement = document.getElementById('main');
-mainElement.remove();
-
-//'newHeader' variable that points to node 'h1#victory'
-const newHeader = document.createElement('h1');
-newHeader.id = 'victory';
-document.body.appendChild(newHeader);
- 
-//Insert message in the h1 element
-newHeader.textContent += "Byron is the champion";
+const newHeader = document.createElement('h1')
+newHeader.id = 'victory'
+newHeader.innerHTML = "Byron is the champion"
